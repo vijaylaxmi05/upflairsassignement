@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Webpage</title>
+</head>
+<body>
+
+    <!-- Section 1: My Favorite Hobby -->
+    <h1>My Favorite Hobby</h1>
+
+    <h2>Painting</h2>
+    <p>
+        I love painting. It is fun and relaxing.<br>
+        I use colors, brushes, and paper to make beautiful pictures.
+    </p>
+
+    <p>
+        Painting helps me feel happy and calm. I enjoy painting in my free time.
+    </p>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Oil_painting_palette.jpg" width="200">
+
+    <hr>
+
+    <!-- Section 2: Biography Page -->
+    <h1>A.P.J. Abdul Kalam</h1>
+
+    <h2>Early Life</h2>
+    <p>
+        He was born in 1931 in Tamil Nadu, India. He loved science and reading.
+    </p>
+
+    <h2>Achievements</h2>
+    <p>
+        He became a great scientist and later the President of India.
+    </p>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/APJ_Abdul_Kalam.jpg" width="150">
+
+    <hr>
+
+    <!-- Section 3: My Daily Routine -->
+    <h1>My Daily Routine</h1>
+
+    <h2>Morning</h2>
+    <p>
+        I wake up, brush my teeth, and eat breakfast.
+    </p>
+
+    <h2>Afternoon</h2>
+    <p>
+        I go to school, study, and eat lunch.
+    </p>
+
+    <h2>Evening</h2>
+    <p>
+        I play, eat dinner, and go to sleep.
+    </p>
+
+</body>
+</html>

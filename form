@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form align="center">
+        <fieldset style="background-color: greenyellow; color: black;" >
+            <p style="color:red">Personal detail</p>
+            <label align="center">Name</label>
+            <input type="text" ><br>
+            <label align="center">Password</label>
+            <input type="text" ><br>
+            <label align="center">Email</label>
+            <input type="text" ><br>
+            <label align="center">Gender</label>
+            <label align="center">Male</label>
+            <input type="radio" name="Gender">
+            <label align="center">Female</label>
+            <input type="radio" name="Gender"><br>
+            <label align="center">Contact#</label>
+            <input type="text" ><br><br>
+            <pr style="color:red">Educational Qualification</pr><br><br>
+            <label align="center">Degree</label>
+            <select>
+               <optgroup label="--SELECT OPTION--">
+                <option value="">--SELECT OPTION--</option>
+                <option value="">BSC</option>
+               <option value="">Btecg</option>
+               <option value="">Bcom</option>
+               <option value="">Ba</option>
+               </optgroup> 
+            </select><br>
+             <label align="center">Engineering</label>
+            <select>
+               <optgroup label="--SELECT OPTION--">
+                <option value="">--SELECT OPTION--</option>
+                <option value="">CSE</option>
+               <option value="">MECHANICAL</option>
+               <option value="">ELECTRICAL</option>
+               <option value="">IT</option>
+               </optgroup> 
+            </select><br>
+            <label align="center">hobbies : </label>
+            <label>playing chess</label>
+            <input type="checkbox" >
+            <label>reading books</label>
+            <input type="checkbox" ><br><br>
+            <p style="color:red">Address</p>
+            <input type="text" ><br>
+            <label>Attch</label>
+            <button>Choose file</button>
+            <label>no file choosen</label><br><br>
+            <button style="background-color: red; color: white;">SUBMIT</button>
+
+
+
+        </fieldset>
+
+    </form>
+    
+</body>
+</html>

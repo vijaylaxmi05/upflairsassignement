@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Overview</title>
+</head>
+<body>
+    <h1 >
+        Haunting Adeline
+    </h1>
+    <img alt="haunting adeline">
+    <p>
+        Haunting Adeline follows Adeline Reilly, a young author who has recently moved into her family’s home in Washington state following the death of her grandmother. She is stalked by Zade Meadows, the leader of an underground organization, Z, which aims to end human trafficking.
+
+    </p>
+    <ol align="i">
+        <li>Introduction</li>
+        <ul>
+            <li>background</li>
+            <li>lifestyle</li>
+        </ul>
+        <li>Adeline</li>
+         <ul>
+            <li>behavior</li>
+            <li>life</li>
+         </ul>
+        <li>Zade Meadow</li>
+        <ul>
+            <li>behavior</li>
+            <li>
+                life
+            </li>
+        </ul>
+    </ol>
+
+</body>
+</html>

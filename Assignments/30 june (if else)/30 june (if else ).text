@@ -1,0 +1,270 @@
+var prompt = require('prompt-sync')();
+/*Beginner level
+let n = prompt( "Enter a number: " );
+if(n%2===0){
+  console.log("number is even")}
+else{
+  console.log("number is odd")
+}  
+let p = prompt( "Enter a number: " );
+if(p>0){
+  console.log("no is positive")}
+if(p<0){
+  console.log("no. is negative")
+}
+if(p == 0){
+  console.log("its zero")
+}
+let o = prompt( "Enter a number: " );
+let m = prompt("enter another ")
+if(o<m){
+  console.log(m + " is greater")}
+else{
+  console.log(o + "is smaller")}
+let r = prompt( "Enter a number: " );
+if(r%3===0){
+  console.log("divisible by 3")}
+else{
+  console.log("not divisible by 3")
+}  
+let b = prompt( "Enter a number: " );
+if(b%7===0){
+  console.log("multiple by 7")}
+else{
+  console.log("notmutliple of  7")
+}  
+let c = prompt( "Enter a character: " );
+if(c>='a' & c<='z'){
+  console.log("alphabet")}
+else{
+  console.log("not alphabet")
+}  
+let d = prompt( "Enter a number: " );
+if(d>10 & d<50){
+  console.log("number is between 10 and 50")}
+else{
+  console.log("no. not between 10 and 50")
+}  
+let g = prompt("enter a three digit number")
+if(g >=100 && g <=999){
+  console.log("number is three digit")
+}
+else{
+  console.log("no is not three digit")
+}
+let q = prompt( "Enter a number: " );
+if(q>=18){
+  console.log("eligible for vote")}
+else{
+  console.log(" not eligible for vote")
+}
+let x = prompt( "Enter a number: " );
+if( x>30){
+  console.log("hot temperature")}
+else {if(x=>15 && x<=30){
+  console.log("moderate temperature")
+}
+if(x <=15){
+  console.log("cold")
+}}
+//Intermediate level
+let a = prompt( "Enter a number: " );
+let b = prompt( "Enter a number: " );
+let c = prompt("enter a number : ");
+if(a>b){
+  if(a>c){
+    console.log(a+" is greatest")
+  }
+}
+else{
+  if(b>c){
+    console.log(b+" is greatest")
+  }
+  else{
+    console.log(c+" is greatest")
+  }
+}
+let d = prompt("enter a year")
+if(d%4==0 && d%100!=0){
+  console.log(d+" is leap year")
+}
+else{
+  console.log(d + "not a laep year")
+}
+let e = prompt("enter a character")
+if(e>='a' & e<='z'){
+  console.log(" lower alphabet")}
+else{
+  if(e>='A' && e<='Z'){
+  console.log("upper alphabet")}
+  else{
+    if(e>=0 && e<=9)
+    {
+      console.log("digit")
+    }
+    else{
+      console.log("special character")
+    }
+  }
+} 
+let f = prompt("enter a number") 
+if(f<40){
+  console.log("F")
+}
+if(f>=90){
+  console.log("A")
+}
+if(f<90 && f>=75){
+  console.log("B")
+}
+if(f<75 && f>=60){
+  console.log("C")
+}
+if(f<60 && f>=40){
+  console.log("D")
+}
+let g = prompt("enter a number")
+if(g==1){
+  console.log("monday")
+}
+if(g==2){
+  console.log("tuesday")
+}
+if(g==3){
+  console.log("wednesday")
+}
+if(g==4){
+  console.log("thursday")
+}
+if(g==5){
+  console.log("friday")
+}
+if(g==6){
+  console.log("saturday")
+}
+if(g==7){
+  console.log("sunday")
+}
+let h = prompt("enter a number");
+if(g%5==0 && g%11==0){
+  console.log("divisible by both 5 and 11")
+}
+else{
+  console.log(" not divisible by both 5 and 11")
+}
+let l = prompt("enter your name");
+let k = prompt("enter your age");
+if(k >=18){
+  console.log(l + " is eligible for license")
+}
+else{
+  console.log(l + " is not eligible for license")
+}
+let o = prompt("enter first number");
+let i = prompt("enter second number");
+if(i==o){
+  console.log("they are equal")
+}
+else{
+   if(o>i){
+    console.log(o+ " is greater than " + i)
+   }
+   else{
+    console.log(i + " is greater than " + o)
+   }
+}
+let j = prompt( "Enter a number: " );
+if(j>0 && j%2==0){
+  console.log("no is positive and even")}
+if(j>0 && j%2!=0){
+  console.log("no. is positive  and odd")
+}
+if(j < 0){
+  console.log("its negatice")
+}*/
+//Advance Leval*/
+let a = prompt("enter a number");
+let b = prompt("enter a number");
+let c = prompt("enter a number");
+let d = prompt("enter a number");
+let e = prompt("enter a number");
+ let sum = a + b + c + d + e;
+let f = sum / 5;
+if(f<40){
+  console.log("F")
+}
+if(f>=90){
+  console.log("A")
+}
+if(f<90 && f>=75){
+  console.log("B")
+}
+if(f<75 && f>=60){
+  console.log("C")
+}
+if(f<60 && f>=40){
+  console.log("D")
+}/*
+let g = prompt("enter a number");
+if(g%3==0 || g%5==0){
+  console.log("divisible by both 3 and 5")
+}
+else{
+  if(g%3==0){
+    console.log("divisible by 3")
+  }
+else{
+    if(g%5==0){
+      console.log("divisible by 5")
+      }
+    else{
+      console.log("not divisible by 3 and 5")
+    }  
+}
+}
+let h = prompt("enter password");
+if(h>=8 && (h>='A' && h>='a' && (h=="@"|| h=="#"))){
+  console.log("password is srtong ")
+}
+else{
+  console.log("password is weak")
+}
+let i = prompt("enter a month");
+if(i=="january" || i=="march" || i=="may" || i=="july" || i=="august" || i=="october" || i=="december"){
+  console.log("31 days")
+}
+else{
+  if(i=="february"){
+    console.log("28/29 days")
+  }
+    else{
+      console.log("30 days")
+    }
+  }
+let j = prompt("enter first side")
+let k = prompt("enter second side")
+let l = prompt("enter third side")
+if((i == k == l) && (i+k+l==180)){
+  console.log("equilateral")
+}
+else{
+   if(i != k != l && (i+k+l==180))
+   {
+    console.log("scalence triangle")
+   }
+   else{
+    if((i == k != l) && (i+k+l==180)){
+      console.log("isosceles triangle")
+    }
+   }
+}
+let o = "vijju"
+let p = "vijju05"
+let m = prompt("enter a username");
+let n = prompt("enter password");
+if(o==m && p==n){
+  console.log("welcome")
+}
+else(
+  console.log("invalid username or password")
+)*/

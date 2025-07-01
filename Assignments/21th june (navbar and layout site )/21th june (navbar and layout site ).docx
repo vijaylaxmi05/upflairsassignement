@@ -1,0 +1,161 @@
+TASK 1
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Tak1</title>
+    <style>
+        .outerbox{
+            width:800px;
+            height:380px;
+            border: 1px solid black;
+            color: grey;
+            background-color: aqua;
+            text-align:right;
+            font-size: 15px;
+        }
+        .innerbox1{
+            margin-top:50px ;
+            margin-left:50px;
+            color:white;
+              float:left;
+              padding-top: 15px;
+               width:700px;
+            height: 40px;
+            border: 1px ;
+            background-color: darkcyan;
+        }
+        .innerbox1 a{
+            text-decoration: none;
+             color:white; 
+             padding:5px;
+        }
+        .innerbox1 button{
+            border-radius: 25px;
+            margin-left: 150px;
+        }
+        .innerbox2{
+            margin-top:50px ;
+            margin-left:50px;
+            color:white;
+              float:left;
+              padding-top: 15px;
+               width:700px;
+            height: 40px;
+            border: 1px ;
+            background-color: darkcyan;
+        }
+        .innerbox2 a{
+            text-decoration: none;
+             color:white; 
+             text-align:left;
+             padding:10px;
+        }
+        .innerbox2 button{
+            border-radius: 25px;
+            margin-right: 360px;
+        }
+        .innerbox3{
+            margin-top:50px ;
+            margin-left:50px;
+            color:white;
+              float:left;
+              padding-top: 15px;
+               width:700px;
+            height: 40px;
+            border: 1px ;
+            background-color: darkcyan;
+        }
+        .innerbox3 a{
+            text-decoration: none;
+             color:white; 
+             text-align:left;
+             padding:10px;
+        }
+        .innerbox3 button{
+            border-radius: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outerbox">BOYWITHCODES
+        <div class="innerbox1">
+            <a style="margin-left: 3px; padding-right: 200px;  font-size:large;"><b>BMW</b></a>   
+            <a href="" >HOME</a>
+            <a href="">ABOUT</a>
+            <a href="" > SERVICES</a>
+            <button>CONTACT</button></a> 
+        </div>
+        <div class="innerbox2">
+            <a href="" >HOME</a>
+            <a href="">ABOUT</a>
+            <a href=""> SERVICES</a>
+            <button>CONTACT</button></a> 
+             <a style="margin-right: 5px; padding-left: 10px;  font-size:large;"><b>BMW</b>
+             </a>   
+        </div>
+        <div class="innerbox3">
+            <a href=""  >HOME</a>
+            <a href="">ABOUT</a>
+            <a href=""> SERVICES</a>
+            <a  style="margin-right: 300px; padding-left: 20px; font-size:large;"><b>BMW</b></a> 
+            <button>CONTACT</button></a> 
+             
+        </div>
+    </div>
+</body>
+</html>
+TASK 3
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navi</title>
+    <style>
+        .outerbox{
+            width: 1200px;
+            height: 800px;
+            border:1px solid black;
+        }
+        .box{
+            width:200px;
+            height:400px;
+            border: 1px solid black ;
+            float: left;
+            padding:10px;
+            margin-top: 150px;
+        }
+        .box1{
+            text-align: justify;
+            color:black;
+            margin-left: 100px;
+            text-align: center;
+        }
+        .box2{
+            border:1px solid pink;
+            background-color: pink;
+            margin-left: 100px;
+            margin-right:100px;
+            text-align: center;
+        }
+        .box3{
+            margin-left: 0px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="outerbox">  
+    <div class=" box box1"><b>
+        <img scr="" width="100"><br><br>YOUTUBE</b><P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</P></div>
+        <div class=" box box2"><b>
+            <img src="https://tse1.mm.bing.net/th?id=OIP.m6MsvQpAYKq7YAjrv8EoZQHaHa&pid=Api&P=0&h=180" width="100" color="pink"><br><br>INSTAGRAM</b><P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</P></div>
+        <div class=" box box3"><b>
+            <img  valign="center" src="http://1000logos.net/wp-content/uploads/2017/06/Twitter-symbol.jpg" width="100px">
+            <br><br>
+            TWITTER</b><P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</P></div>
+        </div>
+</body>
+</html>

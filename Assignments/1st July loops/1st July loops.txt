@@ -1,0 +1,154 @@
+var prompt = require('prompt-sync')();
+
+for ( let i = 1 ; i <=10 ; i++){
+   console.log(i)
+}
+/*
+let i=10
+while( i >=1){
+    console.log(i)
+    i--
+}/*
+let i = 1
+do{
+  console.log(i)
+  ++i
+}while(i<=5)
+/*
+for( let i = 2 ;i<=50 ;i++){
+    if(i%2==0){
+    console.log(i)}
+}/*
+for( let i = 20 ;i<=50 ;i++){
+    if(i%3==0){
+    console.log(i)}
+}/*
+for( let i = 1 ;i<=30 ;i++){
+    if(i%3==0){
+    console.log(i)}
+}   
+    /*
+    let sum=0;
+    let i=1
+while( i <=100){
+    sum += i
+    i++
+}
+console.log(sum)
+/*
+ let product =1    
+for( let i = 1 ; i<=10 ; i++){ 
+   product *= i
+}
+ console.log(product)
+/*
+  let sum=1    
+for( let i = 1 ; i<=50 ; i++){ 
+   if(i%2==0){
+   sum +=i
+   }
+}
+ console.log(sum-1)
+/* 
+ let sum = 0
+for(let i = 1 ; i<=10 ; i++){
+     let expo = i**2
+    sum += expo
+}
+console.log(sum)
+/*
+for( let i = 1 ; i<=20 ; i++){ 
+  if(i%4==0){
+    continue
+  }
+  else{
+    console.log(i)
+  }
+}/*
+ for( let i = 1 ; i<=10 ; i++){ 
+  if(i==7){
+    break
+  }
+  else{
+    console.log(i)
+  }
+}/*
+let count = 0
+for(let i = 1 ; i<=100 ; i++){
+  if(i%3==0 && i%5==0){
+  count += 1
+  console.log(count)
+}
+}/*
+for( let i=1 ; i <=3 ;i++){
+  for(let j = 1 ; j<=3 ; j++){
+    console.log( i , j )
+  }
+}
+let m = parseInt(prompt("enter a number to check if is factorial"))
+let fact = 1
+for(let i = m ; i >=1 ; i--){
+         fact = i*(fact)
+} console.log(fact)
+
+for(let a = 4 ; a>1 ; a--){
+  for(let b = 1 ; b<4 ; b++){
+    let sum = a+b
+    if(sum==5){
+      console.log(a,b)
+  }
+}
+}/*
+let n = parseInt(prompt("enter a number to check if is prime"))
+let primeno = true
+if(n<=1){
+  primeno = false
+}
+else{
+  for( let i = 2 ; i <n ; i++ )
+  {
+    if(n%i === 0){
+      primeno = false
+      break
+  }
+}}
+if(primeno){
+  console.log("prime")
+}
+else{
+  console.log("not prime number")
+}/*
+let n = parseInt(prompt("Enter a number: "));
+let reverse = 0;
+
+while (n > 0) {
+  let digit = n % 10;
+  reverse = reverse * 10 + digit;
+  n = Math.floor(n / 10);
+}
+console.log("Reversed number is: " + reverse);/*
+
+let n = parseInt(prompt("Enter a number: "));
+let count = 0;
+while (n != 0) {
+  n = Math.floor(n / 10);
+  count++;
+}
+if (count === 0) {
+  count = 1;  
+}
+console.log("Number of digits: " + count);/*
+
+let num = parseInt(prompt("Enter a number: "));
+let originalNum = num;
+let reversed = 0;
+while (num > 0) {
+  let digit = num % 10;               
+  reversed = reversed * 10 + digit;  
+  num = Math.floor(num / 10);         
+}
+if (originalNum === reversed) {
+  console.log("Palindrome number");
+} else {
+  console.log("Not a palindrome number");
+}*/

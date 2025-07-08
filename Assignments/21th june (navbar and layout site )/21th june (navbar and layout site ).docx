@@ -106,6 +106,124 @@ TASK 1
     </div>
 </body>
 </html>
+Task2
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outerbox{
+            width:100%;
+            height:900px;
+            color:greenyellow;
+            text-align: left;
+            border: 1px solid black;
+            padding-right: 5px;
+            font-size: larger;
+        }
+        #ab{
+            text-align: center;
+            color:darkgreen
+        }
+        #a{
+            color:green;
+        }
+        .pa{
+            color:palegoldenrod;
+            text-align: right;
+            padding:10px;
+        }
+        .heading{
+            flex: row;
+            color:white;
+            background-color: green;
+            margin: 3px 2px 5px 2px;
+            height:90px;
+            width:100%;
+        }
+        .outerbox2{
+            display: flex;
+        }
+        .box{
+            color:greenyellow;
+            margin: 60px 10px 10px 50px;
+        }
+        .box1{
+           margin-left: 100px;
+        }
+        .box1 p{
+            color: grey;
+        }
+        .outerbox3{
+            display:flex;
+            background-color: rgb(90, 202, 127);
+        }
+        .box4{
+            margin-left:100px;
+            margin-right:20px;
+            text-align: left;
+        }
+        .box5{
+            margin-left:5px;
+            margin-right:20px;
+            text-align: left;
+        }
+        .box6{
+            margin-left:50px;
+            margin-right:20px;
+            text-align: left;
+        }
+        .box4{
+            text-align: white;
+        }
+        #v{
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div class="outerbox">logo
+        <div class="pa"> About  Contact  FAQ   Help</div>
+        <div class="heading"><h1>Heading</h1></div>
+        <div class="outerbox2">
+        <div class="box"><h3>Heading</h3><p>Link1</p> <p>Link2</p><p>Link3</p><p>Link4</p><p>Link5</p></div>
+        <div class="box1">
+            <h3>Heading</h3>
+            <button>View Template Source Code</button>
+            <p >In a web application, a view template is responsible for rendering dynamic content on the frontend based on data passed from the backend. For example, in a random text generator app, the backend selects a random string from a list and sends it to the view template, which displays it to the user. This separation of concerns allows developers to keep logic and presentation organized. By using templating engines like EJS, developers can embed dynamic values directly within HTML, enabling flexible and responsive interfaces without sacrificing clarity</p>
+            <br>
+            <h3>Heading</h3>
+            <p >Life is a journey filled with moments of joy, struggle, growth, and discovery. It teaches us lessons through both success and failure, shaping who we are with each passing day. At times, life challenges us to be stronger, more patient, and more understanding, while at other times, it rewards us with unexpected happiness and love. Though uncertain and ever-changing, life is also full of opportunities to learn, connect, and create meaning. Ultimately, it’s not about the destination but how we live each moment—with purpose, kindness, and resilience.</p>
+        </div>
+        </div>
+        <div class="outerbox3">
+            <div class="box4">
+                <h3>Heading</h3>
+                <p id="v">This too, will pass</p>
+                <h3>Heading</h3>
+                <p id="v">The most important phase of life is student period . It si also known as golden period of gthe life</p>
+            </div>
+            <div class="box5">
+                <h3>Heading</h3>
+                <p id="v">You will not be punished for yor anger , you will be punished by your anger </p>
+                <h3>
+                    Heading
+                </h3>
+                <p id="v">
+                    the most important movemnet of your life is noew . the most im[portant persion in your life is you . yhe most important activty is in which you are involved 
+                </p>
+            </div>
+            <div class="box6">
+                <h3>Heading</h3>
+                <p id="v">You will not be punished for yor anger , you will be punished by your anger</p>
+            </div>
+        </div>
+        <p id="ab">@copyright Your Site |Terms of use |Privacy policy</p>
+    </div>
+</body>
+</html>
 TASK 3
       <!DOCTYPE html>
 <html lang="en">

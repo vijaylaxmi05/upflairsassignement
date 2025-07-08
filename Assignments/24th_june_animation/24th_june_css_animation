@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Animation</title>
+    <style>
+        .box{
+            width:100px;
+            height:50px;
+            transition-duration: 0.5s;
+            border:1px solid black;
+             background-color: lightblue; 
+             margin: 100px 50px 100px 100px;
+        }
+        .box:hover{
+              transition:all 2s ;
+              background-color: wheat;
+              transform:scaleY(2);
+              transition-timing-function: linear; 
+             }
+        .gear{
+            width:100px;
+            height:100px;
+            animation-name: gear;
+            animation-duration: 4s;
+            margin:100px 40px 50px 100px;
+              animation-iteration-count:infinite;
+        }
+        @keyframes gear {
+            from{
+                transform:rotateX(0deg)
+            }
+            to{
+                transform:rotate(360deg)
+            }
+            
+        }
+        .text{
+            animation-name: fade;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            margin-top: 50px;
+            margin-left: 10px;
+            opacity: 0;        
+        }
+        @keyframes fade {
+            from{
+                text-align: left;
+            }
+            to{
+                opacity: 1;
+                text-align: center;
+                 transform: translateX(2);
+            }   
+        }
+    </style>
+
+</head>
+<body>
+    <p>TASK 1: Smooth Hover Animation (Using transition) </p>
+    <div class="box"></div>
+    <p>TASK 2: Rotating Gear (Using @keyframes)</p> 
+<div class="gear"><img src="https://tse1.mm.bing.net/th/id/OIP.XhHMz4kd7WWlGH8Go0tdvwHaHZ?pid=Api&P=0&h=180" ></div>
+<p> TASK 3: Text Fade In + Slide (Using @keyframes)</p>
+<div class="text"></div><h1>Welcome to CSS World</h1></div>
+</body>
+</html>

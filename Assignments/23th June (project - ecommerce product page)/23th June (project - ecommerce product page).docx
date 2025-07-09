@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce website</title>
+    <style>
+        .header{
+            font-size:larger;
+            background-color:rgba(0, 0, 0, 0.541);
+            color:black;
+            display:flex;
+        }
+    #a{
+        color:wheat;
+        margin-left:75px;
+        padding-right: 25px;
+        padding: auto;
+    }
+    .header1{
+        display: flex;
+        background-color:whitesmoke;
+    }
+    .brand{
+        font-size: 45px;
+        color:green;
+    }
+    .b{
+        text-align:justify;
+        margin-top: 40px;
+        margin-left:750px;
+    }
+    .outerbox1{
+        background-color:#f8f8f8;
+        color:solid black;
+        display:flex;
+        width: 100%;
+        height:300px;
+    }
+    .box1{
+        text-align: left;
+        margin:20px 10px 20px 65px;
+        font-size: x-large;
+    }
+    .box2{
+        margin-right: 100px;
+        margin-top:25px;
+    }
+    .outerbox2{
+        text-align: center;
+        font-size: xx-large;
+    }
+    .innerbox1{
+        padding-left: 100px;
+        display: flex;
+       align-items: center;
+       margin-left: 150px;
+       border: 1px ;
+       font-size: x-large;
+    }
+    .innerbox1 button{
+        background-color:lightgreen;
+        font-size: large;
+    }
+    .img{
+        margin-left: 300px;
+    }
+    .box3 img{
+        border:1px solid white ;
+        border-radius: 50%;
+        margin-right: 110px;
+            }
+    .box4 img{
+        border:1px solid white;
+        border-radius: 50%;
+         
+            }
+    .box5 img{
+        border:1px solid whire ;
+        border-radius: 50%;
+        margin-left: 150px;
+            }
+     .outerbox3 {
+        text-align: center;
+        background-color: lightcyan;
+        font-size: x-large;
+     }     
+     .innerbox4{
+        display: flex;
+        height:580px;
+        border: 1px ;
+        margin-left:300px;
+        
+     }  
+     .box6{
+       border: 1px solid;
+       margin-left:50px;
+       padding:5px;
+       text-align: left;
+       margin-bottom: 10px;
+       width:440px;
+       height:540px;
+       background-color: white;
+     }
+     .box7{
+       border: 1px solid;
+       margin-left:50px;
+       padding:5px;
+       text-align: left;
+       margin-bottom: 10px;
+       width:440px;
+       height:540px;
+       background-color: white;
+     } 
+      .box8{
+       border: 1px solid;
+       margin-left:50px;
+       padding:5px;
+       text-align: left;
+       margin-bottom: 10px;
+       width:440px;
+       height:540px;
+       background-color: white;
+     }
+    .foot{
+        background-color:black;
+        color:whitesmoke;
+        border:1px solid black;
+        height:50px;
+        text-align: left;
+        padding-left:25px;
+        padding-top: 6px;
+     }
+     .outerbox4{
+        padding-left:50px;
+        background-color:lightslategray;
+        height:430px;
+     }
+     .innerbox5{
+        display:flex;
+        margin-left: 300px;
+        margin-top:60px;
+        padding-top:30px;
+        margin-right:8cqw;
+        font-size: x-large;
+     }
+     .innerbox6{
+        display:flex;
+        background-color: lightslategray;
+        font-size:xx-large;
+     }
+     #d{
+        text-align: left;
+     }
+     #m{
+        text-align: left;
+     }
+     .box9{
+        width: 550px;
+     }
+     .box10{
+        width: 550px;
+     }
+     .box12{
+        
+     }
+     .box13 {
+        margin-left: 1600px;
+     }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <p id="a"><pre>✉️xyz@gamil.com  📞00510-90178                                                                                                                                                                      <img src="facebook.png"><img src="instag.gif"><img src="mail.png"></pre></p>
+        
+    </div>
+    <div class="header1">
+        <div class="brand"><img src="apple-icon.png" width="130"></div>
+        <div class="b">Home About Shop More</div>
+    </div>
+    <div class="outerbox1">
+        <div class="box1">
+        <h3>Prodient Occaecal</h3>
+        <h4>Aliqup ex ea commando consequent</h4>
+        <p> Curology skincare product,likely  custom prescription formula. It's a clean, minimalistic bottle with a sleek design, featuring the Curology logo vertically aligned in dark blue. The product is placed on a white creamy background, possibly representing the texture of the product itself — smooth, hydrating, and dermatologist-formulated..</p></div>
+        <div class="box2"><img src="banner_img_02.jpg" width="250"></div>
+    </div>
+    <div class="outerbox2">
+        <h3>Categories of the month</h3>
+        <p>Excrepler sint occassisont cupilant proidentt , sunti in culpa ui offica molit in dest labiunm</p>
+        <div class="innerbox1">
+            <div class="box3"><img src="watch1.jpg" width="400px"><br>Watches<br><button>On Shop</button></div>
+            <div class="box4"><img src="shoes.jpg" width="410px"><br>Shoes<br><button>On Shop</button></div>
+            <div class="box5"><img src="glasses.jpg" width="410px"><br>Googles<br><button>On Shop</button></div>
+        </div>
+    </div>
+    <div class="outerbox3">
+        <h3>Featured Products</h3>
+        <p>
+            REprehent in voluplate esse cilum dolore eu fugal nulla 
+        </p>
+        <p>
+            pariate Ecxepture sint occasel cipaldel non prodient
+        </p>
+        <div class="innerbox4">
+        <div class="box6">
+            <img src="gym weight.jpg" width="440px" height="250px">
+            <pre> ⭐⭐⭐⭐☆                      $240</pre>
+            <h3>Gym Weight</h3>
+            <p>Loreum ispum dolor sit arnel consepuctor adispator slit sunt in culpa qui offia descrunt</p>
+            <p id="r">Review(13)</p>
+        </div>
+        <div class="box7">
+            <img src="watch.jpg" width="440px" height="250px">
+            <pre> ⭐⭐⭐⭐☆                      $400</pre>
+             <h3>Cloud Nike Shoe</h3>
+             <p>Loreum ispum dolor sit arnel consepuctor adispator slit sunt in culpa qui offia descrunt</p>
+            <p id="r">Review(48)</p> 
+        </div>
+        <div class="box8">
+            <img src="camera.jpg" width="440px" height="250px">
+            <pre> ⭐⭐⭐⭐☆                      $360</pre>
+             <h3>Summer Adddes Shoes</h3>
+            <p>Loreum ispum dolor sit arnel consepuctor adispator slit sunt in culpa qui offia descrunt</p>
+            <p id="r">Review (78)</p>
+        </div>
+        </div>
+        <div class="outerbox4">
+            <div class="innerbox5">
+                <div class="box9">
+                    <h3 id="d" style="color:darkgreen ; font-size: 35px;">Zay Shop</h3>
+                    <p id="m">
+                       <br>
+                        123 Consector at lugullu 10660
+                        <br>
+                        010 3569 9686
+                        <br>
+                        info@company.com
+                    </p>
+                </div>
+                <div class="box10">
+                    <h3 id="d">Products</h3>
+                    <p id="m">
+                        Luxury
+                        <br>
+                        Sports Wear
+                        <br>
+                        Mono Shoes
+                        <br>
+                        Women shoes
+                        <br>
+                        Hepular shoes
+                        <br>
+                        Gym Accessories
+                        <br>
+                        Spots Shoes
+                    </p>
+                </div>
+                <div class="box11">
+                    <h3 id="d">Further Info</h3>
+                    <p id="m">
+                        Home 
+                        <br>
+                        About Us
+                        <br>
+                        Shop Location
+                        <br>
+                        FAQs
+                        <br>
+                        Contact
+                    </p>
+                </div>
+            </div>
+            <div class="innerbox6">
+                <div class="box12">
+                    <pre><img src="facebook.png"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADK0lEQVR4nO2ZO09UQRTHfwUqRB67lksrgrEQBTsfsZOYqHwCQlS+gApS+2iNhFKDX0AxsZLFZ6f2Itio2AoKCBWuOcn/JhMDu3Mfu3NN9p9McrP3nHPn7Jz3QBNN5AK9wAQwDywAG0Alo2WyTGYZGAcO1UOBQeBFhpv2XfPAQBYK7AGmgT8S/AN4AFzQ6ewnO5gsk3kReKhvVfTtKaAlqeAi8FLCfgO3gE4ah07gNrDpnE4hyUlEpvRdphUKR4Ev2ssbYG8c5mkxfgNKhEcJWNae7vsyDcouzZyOkR8cl5lt67kmIpMyn8gb7mhvFqKroteJTo107Ajn5ZNmRkM7vO8CVrTHnmqCJkRk4S8Elp0cYv65E2b0/kY1QWURWSzPqyLDej9XTdCiiNKUB5Z/RoGnwCeVHht6ntU7o9kJQ1LGlDhXw/xN3q5YE1FHAgXagEngp0fpsQrcBFoTfKdDMmyvuyL6UJI4/8Hhfw5cccoYW336bc6he58wT1Vq7TOJIiWZQnTcJz14TjlmnCTpVrJWpM05iVcxayHzk9fifRfTzCpZKzIp+oUkBZ2UiU7GQn8QRYqOY/uY02444wSAYghFRh3HTosof42EUGRWtJdJj6uS9TiEIpFtW4hNiz6fJFcvRdZF2056tEvW+v+uSKdk/fKkb5pWNWe3siMtxkI6+6hPOe2J+ZDht6gkZvSnSY6zTkIshC5RFmNkZRfGs+TT8dVbkVaV4hUVgHGUOQC8zUvR+G8Zv6TaycecPuepjI9Q0r8a8ZcViQ4rz7Trecxx7Ogk6tJYraVodVtViq96trp2dbCvXq3uYgbDh4LC6BP1KetaC/ptJGHvEmv4EHoc5INhn/ZhPPCAzgePtMdreR6Z1oL3yBQnqtglS95wN05XOqBrhU3f8X2DMAhs6Vqh35dpSprb+LKb8Oh25sL34jC2OCZmY/4ThEM/8NVJtLEvRQuOMpu6ZDFnaxS65BNbTruQOP+06M5uW8JWdD9xSQODLNrcCCarT3lixolO2zKnxNfTLo4AzzxKj6xXuV4Bp0d9w5xTfmS1aZP1UaH1OnCwHgo00QTx8Bf0wax6bwlEYQAAAABJRU5ErkJggg==" alt="instagram-new--v1"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmklEQVR4nO2XTSgFURTHf4N6RZ4kWWCjXikLZaEsKLKhLG0tbe3YWtrJ0u5laSsrWVgoC0UppZR6KSWpp/R44mrqTN3GR/Pmfcyd6fzqLua9c++c/5x7zzkXFEVRlIQwGRlkTkhaMSrEMUzmI+LhPl4UIefADO4yCZxGERI8HwAjuMMwsAd8/eHvDyHbQFV+qwBbQJ7kyIsPFfGpKj5GOuwFYN/67wlYA9pbKKANWAEeLD+OgLE4WWsWuLBsroHF5mtgDrgMvXeh3vQb9cs0gkKMnVBzHekCNkN7dRfob4CAXjkHb7L2O7AD9DSzIA6FssczsAHkYgjoAFaBxzqypam3sgf5PJh/AyzXMH8euLLm+/VrOqkWxRPn76x1joHxf+aMAoeW/b1ExT+LifdanbK9XmStT9l+A5ZNn+z7D7F5lXPR7WLTOAgURYi/ZhlYl1G2RBbF1vnudwI4+eUWdwZMpbGNXwJugZLUIi/N95FczNQclexfrNKGUSGOYTQijmE0Io5hNCKOYTQirkfEpHyQGSGKoigKreYb+HOpsFE9vjIAAAAASUVORK5CYII=" alt="mail"></pre>
+                </div>
+                <div class="box13">
+                    <input type="text" placeholder="Email Address"><button>Subscribe</button>
+                </div>
+            </div>
+        </div>   
+        <div class="foot">
+            Copyright 2021 Concurency Nature| DEsignd by Templateko
+        </div> 
+</body>
+</html>

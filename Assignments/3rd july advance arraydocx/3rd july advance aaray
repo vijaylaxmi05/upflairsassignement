@@ -1,0 +1,119 @@
+// 1. Flatten a deeply nested array
+function flatten(arr) {
+  let result = [];
+  for (let item of arr) {
+    if (Array.isArray(item)) {
+      result = result.concat(flatten(item));
+    } else {
+      result.push(item);
+    }
+  }
+  return result;
+}
+console.log(flatten([1, [2, [3, [4]], 5]])); // [1, 2, 3, 4, 5]
+// OR using flat(Infinity)
+console.log([1, [2, [3, [4]], 5]].flat(Infinity));
+
+// 2. Remove duplicates without Set
+let arr2 = [1, 2, 2, 3, 4, 4, 5];
+let uniqueArr = arr2.filter((item, index) => arr2.indexOf(item) === index);
+console.log(uniqueArr); // [1, 2, 3, 4, 5]
+
+// 3. Output of:
+const a = [1, 2, 3];
+const b = a;
+b.push(4);
+console.log(a); // [1, 2, 3, 4] (arrays are reference types)
+
+// 4. Find second largest number without sorting
+let arr3 = [10, 5, 8, 1, 9];
+let max = -Infinity, secondMax = -Infinity;
+for (let num of arr3) {
+  if (num > max) {
+    secondMax = max;
+    max = num;
+  } else if (num > secondMax && num !== max) {
+    secondMax = num;
+  }
+}
+console.log(secondMax); // 9
+
+// 5. Count occurrences
+let arr4 = [1, 2, 2, 3, 1, 1];
+let count = {};
+for (let num of arr4) {
+  count[num] = (count[num] || 0) + 1;
+}
+console.log(count); // {1: 3, 2: 2, 3: 1}
+
+// 6. Custom .map() polyfill
+Array.prototype.myMap = function(callback) {
+  let result = [];
+  for (let i = 0; i < this.length; i++) {
+    result.push(callback(this[i], i, this));
+  }
+  return result;
+};
+console.log([1, 2, 3].myMap(x => x * 2)); // [2, 4, 6]
+
+// 7. Sort objects by multiple properties
+let people = [
+  {name: "John", age: 30},
+  {name: "Alice", age: 25},
+  {name: "John", age: 22}
+];
+people.sort((a, b) => {
+  if (a.name === b.name) return a.age - b.age;
+  return a.name.localeCompare(b.name);
+});
+console.log(people);
+
+// 8. Filter prime numbers
+function isPrime(n) {
+  if (n < 2) return false;
+  for (let i = 2; i <= Math.sqrt(n); i++) {
+    if (n % i === 0) return false;
+  }
+  return true;
+}
+console.log([2, 3, 4, 5, 10, 11].filter(isPrime)); // [2, 3, 5, 11]
+
+// 9. Output of:
+const arr7 = [1, 2, 3];
+arr7.length = 0;
+console.log(arr7[0]); // undefined
+
+// 10. Difference between forEach & map
+let nums = [1, 2, 3];
+console.log(nums.forEach(x => x * 2)); // undefined
+console.log(nums.map(x => x * 2)); // [2, 4, 6]
+
+// 11. Slice example
+const a1 = [1, 2, 3];
+const b1 = a1.slice(0, 2);
+b1[0] = 100;
+console.log(a1); // [1, 2, 3]
+
+// 12. Find all pairs with target sum
+let arr8 = [1, 2, 3, 4, 5], target = 6;
+let pairs = [];
+for (let i = 0; i < arr8.length; i++) {
+  for (let j = i + 1; j < arr8.length; j++) {
+    if (arr8[i] + arr8[j] === target) pairs.push([arr8[i], arr8[j]]);
+  }
+}
+console.log(pairs); // [[1,5], [2,4]]
+
+// 13. Chunk an array into N groups
+let arr9 = [1, 2, 3, 4, 5, 6], size = 2;
+let chunks = [];
+for (let i = 0; i < arr9.length; i += size) {
+  chunks.push(arr9.slice(i, i + size));
+}
+console.log(chunks); // [[1,2], [3,4], [5,6]]
+
+// 14. Reduce explanation
+console.log([1, 2, 3, 4].reduce((acc, curr) => acc + curr, 0)); // 10
+
+// 15. Time complexity of splice()
+// O(n) because elements need to be shifted.

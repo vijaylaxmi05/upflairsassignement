@@ -1,0 +1,155 @@
+//HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POMODORO</title>
+    <link rel="stylesheet" href="taskmanagemnet.css">
+</head>
+<body>
+<div class="container">
+        <h1>Pomodoro Timer</h1>
+
+        <div class="settings">
+            <label>Work Duration: <input type="number" id="work" value="25"> min</label>
+            <label>Short Break: <input type="number" id="shortBreak" value="5"> min</label>
+            <label>Long Break: <input type="number" id="longBreak" value="15"> min</label>
+            <label>Pomodoros before long break: <input type="number" id="cycles" value="4"></label>
+        </div>
+
+        <div id="status">Status: Work</div>
+        <div id="timer">25:00</div>
+
+        <div class="controls">
+            <button class="start">Start</button>
+            <button class="pause">Pause</button>
+            <button class="reset">Reset</button>
+        </div>
+
+        <div class="cycle-indicator" id="indicator">🔴 ⚪ ⚪ ⚪</div>
+    </div>
+    <script src="taskmanagemnet.js"></script>
+</body>
+</html>
+//CSS
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+            display: flex;
+            justify-content: center;
+             align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .container {
+            text-align: center;
+            background: #fff;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(11, 15, 12, 0.2);
+            width: 320px;
+        }
+
+        h1{
+            margin-bottom: 10px;
+        }
+
+        .settings {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .settings label {
+            display: block;
+            margin: 10px ;
+        }
+
+        input {
+            width: 80px;
+            padding: 5px;
+            margin-left: 10px;
+        }
+
+        #timer {
+            font-size: 48px;
+            margin: 20px 0;
+        }
+
+        .controls button {
+            padding: 10px 15px;
+            margin: 5px;
+            font-size: 16px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .start { background: #28a745; color: white; }
+        .pause { background: #ffc107; color: white; }
+        .reset { background: #dc3545; color: white; }
+
+        #status {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .cycle-indicator {
+            margin-top: 15px;
+            font-size: 24px;
+        }
+//JAVASCRIPT
+
+let timer, isRunning = false;
+let timeLeft, session = 'work', done = 0;
+
+const work = document.getElementById('work');
+const shortBreak = document.getElementById('shortBreak');
+const longBreak = document.getElementById('longBreak');
+const cycles = document.getElementById('cycles');
+
+const display = document.getElementById('timer');
+const statusText = document.getElementById('status');
+const indicator = document.getElementById('indicator');
+
+function updateDisplay() {
+    display.textContent = `${Math.floor(timeLeft/60)}:${(timeLeft%60).toString().padStart(2,'0')}`;
+}
+function updateIndicator() {
+    indicator.textContent = '🔴 '.repeat(done) + '⚪ '.repeat(cycles.value - done);
+}
+
+function startTimer() {
+    if (isRunning) return;
+    isRunning = true;
+    timer = setInterval(() => {
+        if (--timeLeft < 0) {
+            clearInterval(timer);
+            isRunning = false;
+            if (session === 'work') {
+                done++; updateIndicator();
+                session = (done % cycles.value === 0) ? 'long' : 'short';
+                timeLeft = (session === 'long' ? longBreak.value : shortBreak.value) * 60;
+                statusText.textContent = `Status: ${session === 'long' ? 'Long Break' : 'Short Break'}`;
+            } else {
+                session = 'work'; timeLeft = work.value * 60;
+                statusText.textContent = 'Status: Work';
+            }
+            updateDisplay(); startTimer();
+        } else updateDisplay();
+    }, 1000);
+}
+
+function pauseTimer() { clearInterval(timer); isRunning = false; }
+function resetTimer() {
+    pauseTimer(); session = 'work'; done = 0;
+    timeLeft = work.value * 60; statusText.textContent = 'Status: Work';
+    updateDisplay(); updateIndicator();
+}
+
+document.querySelector('.start').onclick = startTimer;
+document.querySelector('.pause').onclick = pauseTimer;
+document.querySelector('.reset').onclick = resetTimer;
+
+resetTimer(); // initialize

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Multi-Level Dropdown</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+    }
+
+    /* Navbar */
+    .navbar {
+        background-color: #2a73a5;
+        padding: 0;
+    }
+
+    .navbar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    .navbar ul li {
+        position: relative;
+    }
+
+    .navbar ul li a {
+        display: block;
+        padding: 14px 20px;
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        background-color: #2a73a5;
+    }
+
+    .navbar ul li a:hover {
+        background-color: #1f5d84;
+    }
+
+    /* Dropdown menu */
+    .navbar ul li ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #2a3f54;
+        padding: 0;
+        min-width: 180px;
+        z-index: 1000;
+    }
+
+    .navbar ul li ul li a {
+        color: white;
+        background-color: #2a3f54;
+        padding: 12px 16px;
+    }
+
+    .navbar ul li ul li a:hover {
+        background-color: #1e2d3a;
+    }
+
+    /* Show dropdown on hover */
+    .navbar ul li:hover > ul {
+        display: block;
+    }
+
+    /* Submenu for Photography */
+    .navbar ul li ul li ul {
+        top: 0;
+        left: 100%;
+    }
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li>
+            <a href="#">Work ▼</a>
+            <ul>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Development</a></li>
+                <li>
+                    <a href="#">Photography ►</a>
+                    <ul>
+                        <li><a href="#">Nature</a></li>
+                        <li><a href="#">People</a></li>
+                        <li><a href="#">Pets</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Writing</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+</body>
+</html>

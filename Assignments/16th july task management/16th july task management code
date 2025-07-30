@@ -1,0 +1,133 @@
+import { useState } from 'react';
+
+function App() {
+  const [tasks, setTasks] = useState([]);
+  const [title, setTitle] = useState('');
+  const [description, setDescription] = useState('');
+  const [priority, setPriority] = useState('Low');
+  const [editingId, setEditingId] = useState(null);
+
+  const handleAddOrUpdate = (e) => {
+    e.preventDefault();
+
+    if (!title.trim()) return;
+
+    if (editingId) {
+      // Update task
+      setTasks(tasks.map(task =>
+        task.id === editingId ? { ...task, title, description, priority } : task
+      ));
+      setEditingId(null);
+    } else {
+      // Add new task
+      const newTask = {
+        id: Date.now(),
+        title,
+        description,
+        priority,
+        status: 'Pending'
+      };
+      setTasks([...tasks, newTask]);
+    }
+
+    setTitle('');
+    setDescription('');
+    setPriority('Low');
+  };
+
+  const handleDelete = (id) => {
+    setTasks(tasks.filter(task => task.id !== id));
+  };
+
+  const handleEdit = (task) => {
+    setTitle(task.title);
+    setDescription(task.description);
+    setPriority(task.priority);
+    setEditingId(task.id);
+  };
+
+  const handleStatusChange = (id, newStatus) => {
+    setTasks(tasks.map(task =>
+      task.id === id ? { ...task, status: newStatus } : task
+    ));
+  };
+
+  return (
+    <div style={{ padding: '20px', maxWidth: '700px', margin: 'auto' }}>
+      <h1>Task Manager</h1>
+
+      {/* Add/Edit Form */}
+      <form onSubmit={handleAddOrUpdate} style={{ marginBottom: '20px' }}>
+        <input
+          type="text"
+          placeholder="Title"
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+          required
+          style={{ marginRight: '10px' }}
+        />
+        <input
+          type="text"
+          placeholder="Description"
+          value={description}
+          onChange={(e) => setDescription(e.target.value)}
+          style={{ marginRight: '10px' }}
+        />
+        <select
+          value={priority}
+          onChange={(e) => setPriority(e.target.value)}
+          style={{ marginRight: '10px' }}
+        >
+          <option>Low</option>
+          <option>Medium</option>
+          <option>High</option>
+        </select>
+        <button type="submit">{editingId ? 'Update Task' : 'Add Task'}</button>
+      </form>
+
+      {/* Task List */}
+      <table border="1" cellPadding="8" style={{ width: '100%' }}>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Priority</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {tasks.length === 0 ? (
+            <tr>
+              <td colSpan="5" style={{ textAlign: 'center' }}>No tasks available</td>
+            </tr>
+          ) : (
+            tasks.map((task) => (
+              <tr key={task.id}>
+                <td>{task.title}</td>
+                <td>{task.description}</td>
+                <td>{task.priority}</td>
+                <td>
+                  <select
+                    value={task.status}
+                    onChange={(e) => handleStatusChange(task.id, e.target.value)}
+                  >
+                    <option>Pending</option>
+                    <option>In Progress</option>
+                    <option>Completed</option>
+                  </select>
+                </td>
+                <td>
+                  <button onClick={() => handleEdit(task)}>Edit</button>
+                  <button onClick={() => handleDelete(task.id)} style={{ marginLeft: '5px' }}>Delete</button>
+                </td>
+              </tr>
+            ))
+          )}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+export default App;

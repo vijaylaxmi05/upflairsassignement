@@ -1,0 +1,71 @@
+import React, { useState } from 'react';
+
+function App() {
+  const [input, setInput] = useState('');
+  const [todos, setTodos] = useState([]);
+
+  const handleAdd = (e) => {
+    e.preventDefault(); // Prevent page reload
+    if (input.trim() !== '') {
+      setTodos([...todos, input]);
+      setInput('');
+    }
+  };
+
+  return (
+    <div style={{ maxWidth: '400px', margin: '50px auto', textAlign: 'center' }}>
+      <h2>My To-Do List</h2>
+
+      {/* Input Form */}
+      <form onSubmit={handleAdd}>
+        <input
+          type="text"
+          placeholder="Enter a task"
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+          style={{
+            padding: '10px',
+            width: '70%',
+            borderRadius: '4px',
+            border: '1px solid #ccc'
+          }}
+        />
+        <button
+          type="submit"
+          style={{
+            padding: '10px 15px',
+            marginLeft: '10px',
+            backgroundColor: '#007bff',
+            color: 'white',
+            border: 'none',
+            borderRadius: '4px',
+            cursor: 'pointer'
+          }}
+        >
+          Add
+        </button>
+      </form>
+
+      {/* Display To-Do Items */}
+      <ul style={{ marginTop: '20px', listStyle: 'none', padding: 0 }}>
+        {todos.map((todo, index) => (
+          <li
+            key={index}
+            style={{
+              textAlign: 'left',
+              background: '#f8f8f8',
+              marginBottom: '10px',
+              padding: '10px',
+              borderRadius: '4px',
+              boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
+            }}
+          >
+            {todo}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+export default App;
